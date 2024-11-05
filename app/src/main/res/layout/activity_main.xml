@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:backgroundTint="@color/gris"
+    tools:context="com.ejemplo.practica_evaluable_telefono.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/azul"
+        android:textColor="@color/black"
+        android:text="  Proyecto Evaluable"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/ib_llamada"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/esquinas_redondeadas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@mipmap/ic_llamada" />
+
+    <ImageButton
+        android:id="@+id/ib_linterna"
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/esquinas_redondeadas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@mipmap/ic_linterna" />
+
+    <ImageButton
+        android:id="@+id/ib_alarma"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/esquinas_redondeadas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@mipmap/ic_alarma" />
+
+    <ImageButton
+        android:id="@+id/ib_internet"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/esquinas_redondeadas"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@mipmap/ic_internet" />
+
+    <ImageView
+        android:id="@+id/iv_android"
+        android:layout_width="200dp"
+        android:layout_height="208dp"
+        app:srcCompat="@mipmap/ic_android"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Bienvenido"
+        android:textColor="@color/azul"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_android" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
