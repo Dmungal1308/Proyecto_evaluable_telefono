@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Practica_evaluable_telefono</string>
+    <string name="chiste">   Esto era uno, que era tan tonto, tan tonto, tan tonto, que echó una carrera
+    el sólo y quedó segundo</string>
+    <string name="describe">Chicos de PMDM del Virgen del Carmen, soy David. Este ejemplo, te muestra un botón donde escuchar un chiste</string>
+    <string name="select_one">Selecciona uno</string>
+    <string name="select_time_between_rolls">Seleccione tiempo entre tiradas</string>
 </resources>

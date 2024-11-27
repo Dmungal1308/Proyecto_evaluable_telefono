@@ -19,6 +19,9 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.practica_evaluable_telefono.AlarmReceiver
+import com.example.practica_evaluable_telefono.ChistesActivity
+import com.example.practica_evaluable_telefono.ConfigActivity
+import com.example.practica_evaluable_telefono.DadosActivity
 import com.example.practica_evaluable_telefono.R
 
 class MainActivity : AppCompatActivity() {
@@ -64,6 +67,19 @@ class MainActivity : AppCompatActivity() {
             it.startAnimation(buttonScaleAnimation)
             val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.example.com"))
             startActivity(webIntent)
+        }
+
+        findViewById<ImageButton>(R.id.ib_dados).setOnClickListener {
+            it.startAnimation(buttonScaleAnimation)
+            val intent = Intent(this, ConfigActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        findViewById<ImageButton>(R.id.ib_altavoz).setOnClickListener {
+            it.startAnimation(buttonScaleAnimation)
+            val intent = Intent(this, ChistesActivity::class.java)
+            startActivity(intent)
         }
     }
 
